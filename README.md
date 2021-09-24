@@ -75,7 +75,7 @@ Test can also be run manually via the [testNG xml] file
 Success message on the test, stays persistent once you pass the test. Any further run on the test with bad input still give the success message 
 
 
-[BDD balancedArray.feature]: (src/test/e2e/functionaltest/src/test/resources/features/balancedArray.feature)
+[BDD balancedArray.feature]: src/test/e2e/functionaltest/src/test/resources/features/balancedArray.feature
 [functionaltest]: functionaltest.sh
 [Unit test]: src/test/e2e/core/src/test/java/com/ecsd/automation/brand/CalculationsTest.java
 [testNG xml]: src/test/e2e/functionaltest/src/test/resources/default-suite.xml
