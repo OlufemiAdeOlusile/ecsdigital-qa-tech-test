@@ -1,0 +1,17 @@
+
+maven:
+  image: maven:3.6.1-jdk-12
+  stop_signal: SIGKILL
+  stdin_open: true
+  tty: true
+  working_dir: $PWD
+  volumes:
+    - $PWD:$PWD
+    - /var/run/docker.sock:/var/run/docker.sock
+    - ~/.m2:/root/.m2
+  command: bash -c "mvn clean install &&
+           mvn verify -pl functionaltest
+           -Dskip.tests='false'
+           -Dtest.url='http://172.17.0.1:3000/'
+           -Dbrowser.remote_uri='http://172.17.0.1:4444/wd/hub'
+           -Dbrowser.type='CHROME'"
