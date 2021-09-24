@@ -1,8 +1,0 @@
-<suite name="Suite"  preserve-order="true">
-
-    <test name="functionaltest">
-        <packages>
-            <package name="com.ecsd.automation"/>
-        </packages>
-    </test>
-</suite> <!-- Suite -->

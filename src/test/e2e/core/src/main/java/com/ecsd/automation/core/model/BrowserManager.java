@@ -41,7 +41,7 @@ public class BrowserManager {
 
 
     /**
-     * @return Appium Instantiated Driver
+     * @return Instantiated Driver
      */
     public WebDriver getInstantiatedDriver() {
         WebDriver driver = registry.get();
