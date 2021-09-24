@@ -1,0 +1,6 @@
+version: '3.3'
+services:
+  ecsd-tech-test:
+    ports:
+      - '3000:3000'
+    image: 'ecsd-tech-test:femtag'
